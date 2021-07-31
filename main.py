@@ -7,8 +7,8 @@ URL = "https://www.billboard.com/charts/hot-100"
 date = input('What year would you like to go back to(YYYY-MM-DD)?')
 response = requests.get(f"{URL}/{date}")
 billboard_html = response.text
-client_id = 'ec47f463ec2b42eb862033a3f527a82c'
-spotify_secret = '76ecd105a1674a5aaad6390e6b0eac4f'
+client_id = "your's spotify client id here"
+spotify_secret = "your's spotify secret here"
 
 soup = BeautifulSoup(billboard_html, 'html.parser')
 
